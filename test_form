@@ -1,0 +1,12 @@
+<script>
+	(function (t, h, r, y, v, e) {
+    var i = 'GlooExplorerFormWidget';
+    t[i] = t[i] || {};
+    t[i].c = t[i].c || [];
+    t[i].c.push(v); 
+    var js = h.createElement(r);
+    (js.async = !0), (js.src = y);
+    var fjs = h.getElementsByTagName(r)[0];
+    fjs.parentNode.insertBefore(js, fjs);
+  })(window, document, 'script', './explorerform.widget.js', { apiEndpoint: "https://...", /* options (see full list below) */ });
+</script>
