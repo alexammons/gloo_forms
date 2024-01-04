@@ -1,10 +1,60 @@
-	(function (t, h, r, y, v, e) {
-    var i = 'GlooExplorerFormWidget';
-    t[i] = t[i] || {};
-    t[i].c = t[i].c || [];
-    t[i].c.push(v); 
-    var js = h.createElement(r);
-    (js.async = !0), (js.src = y);
-    var fjs = h.getElementsByTagName(r)[0];
-    fjs.parentNode.insertBefore(js, fjs);
-  })(window, document, 'script', './explorerform.widget.js', { apiEndpoint: "https://...", /* options (see full list below) */ });
+<div class="gloo-wdgt" style="max-width: 700px;">Loading widget...</div>
+<script>
+      (function (t, h, r, y, v, e) {
+        var i = "GlooExplorerFormWidget";
+        t[i] = t[i] || {};
+        t[i].c = t[i].c || [];
+        t[i].c.push(v);
+        var js = h.createElement(r);
+        (js.async = !0), (js.src = y);
+        var fjs = h.getElementsByTagName(r)[0];
+        fjs.parentNode.insertBefore(js, fjs);
+      })(
+        window,
+        document,
+        "script",
+        "https://js.gloo.us/explorerform.widget.js",
+        {
+          apiBaseUrl: "https://api.app.gloo.us/api",
+          apiKey:
+            "8ylQyEqy9y2fht4eSzywWpS5ersE5PDSM0c76zvYTTVf3VT177YM4AtVckJOaeW3",
+          embedQuery: ".gloo-wdgt",
+          campaign: "campaignJan2023",
+          topic: "faith",
+          disableMessage: false,
+          disableEmail: false,
+          postalCodeRequired: true,
+          language: "en",
+          debug: true,
+          disableAutoReRouting: true,
+          campaignid: "f594ce14-800a-11ed-b0b7-372ac023da20",
+          text: {
+            primaryHeadline: "Ready to connect?",
+            primarySubheadline:
+              "Fill out the form below, and we will connect you with someone that can help!",
+            firstNamePlaceholder: "Enter your first name",
+            lastNamePlaceholder: "Enter your last name",
+            phonePlaceholder: "Enter your phone",
+            emailPlaceholder: "Enter your email address",
+            messagePlaceholder:
+              "In a few sentences, tell us what you would like to talk about",
+            postalCodePlaceholder: "Enter your Postal Code",
+            postalCodeCaption:
+              'For international help, visit <a href="churchescare.com">this link</a>.',
+            submitButton: "Submit",
+            defaultFormErrorMessage:
+              "There was an error processing your request. Please try again.",
+            successMessageHeadline: "Success!",
+            successMessageSubheadline: "You should hear from someone shortly.", //
+            sucessMessageIconEmoji: ":tada:", // default
+            alreadyConnected:
+              "It looks like youve already been connected with someone. Would you like for us to connect you with someone different?",
+            alreadyConnectedHeadline: " Already Connected",
+            alreadyConnectedButtonCancel: "No cancel",
+            alreadyConnectedButtonConfirm: "Yes connect me with someone new",
+            termsOfService:
+              'This is the <a href="https://gloo.us/terms">Gloo terms of service</a>. <b>If this is an emergency, dial 911<b>',
+          },
+        }
+      );
+    </script>
