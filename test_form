@@ -1,4 +1,3 @@
-<script>
 	(function (t, h, r, y, v, e) {
     var i = 'GlooExplorerFormWidget';
     t[i] = t[i] || {};
@@ -9,4 +8,3 @@
     var fjs = h.getElementsByTagName(r)[0];
     fjs.parentNode.insertBefore(js, fjs);
   })(window, document, 'script', './explorerform.widget.js', { apiEndpoint: "https://...", /* options (see full list below) */ });
-</script>
